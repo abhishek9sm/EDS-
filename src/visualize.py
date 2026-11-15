@@ -3,11 +3,13 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 
-target_dir = Path("plots");
 
-target_dir.mkdir(parents=True, exist_ok=True);
+project_root = Path(__file__).resolve().parent.parent
 
-df = pd.read_csv("data/cleaned_form_responses.csv")
+target_dir = project_root / "plots"
+target_dir.mkdir(parents=True, exist_ok=True)
+
+df = pd.read_csv(project_root / "data" / "cleaned_form_responses.csv")
 
 person_palette = {
     "P1": "#4E79A7",
@@ -78,6 +80,7 @@ sns.boxplot(
     x="person_id",
     y="wpm_avg",
     ax=axes2[0, 0],
+    hue="person_id",
     palette=person_palette,
     width=0.45,
 )
@@ -90,6 +93,7 @@ sns.boxplot(
     x="person_id",
     y="acc_avg",
     ax=axes2[0, 1],
+    hue="person_id",
     palette=person_palette,
     width=0.45,
 )
