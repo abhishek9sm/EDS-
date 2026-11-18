@@ -99,7 +99,7 @@ pip install -r requirements.txt
 * **Team Members:**
   * Ayush Shetty *NN25ISE055*
   * Abhishek S M *NN25ISE008*
-  * Aron Ashok Shejekant *NN25ISE042*
+  * Arun Ashok Shejekant *NN25ISE042*
 * **Project Mentor:** *Dr. Vandana B S / Associate Professor / Dept of Information Science and Engineering/*
 * **Institution:** *NMAM Institute of Technology, Nitte - 574110*
 * **Course:** B.Tech in Information Science and Engineering
