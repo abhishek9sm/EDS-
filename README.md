@@ -94,6 +94,17 @@ pip install -r requirements.txt
 
 ---
 
+## Learned Regression Equations
+
+The multi-output Multiple Linear Regression model fits two equations simultaneously using anonymous historical baselines and physiological inputs (`high` stress serves as the dropped reference category):
+
+* **Typing Speed ($\widehat{\text{WPM}}$):**
+  $$\widehat{\text{WPM}} = -17.08 + 0.98(\text{baseline\_wpm}) + 0.18(\text{baseline\_acc}) - 0.13(\text{sleep\_hours}) - 0.23(\text{sleep\_quality}) - 0.01(\text{caffeine\_mg}) + 4.86(\text{stress\_low}) + 3.78(\text{stress\_medium})$$
+
+* **Typing Accuracy ($\widehat{\text{Accuracy}}$):**
+  $$\widehat{\text{Accuracy}} = -0.95 + 0.0002(\text{baseline\_wpm}) + 1.03(\text{baseline\_acc}) - 0.96(\text{sleep\_hours}) + 0.58(\text{sleep\_quality}) - 0.0008(\text{caffeine\_mg}) + 2.47(\text{stress\_low}) + 3.05(\text{stress\_medium})$$
+
+---
 ## Team & Academic Credits
 
 * **Team Members:**
